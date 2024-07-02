@@ -9,7 +9,7 @@ export interface ICustomButton extends PropsWithChildren {
     onClick?:()=>void
 }
 
-enum CustomButtonTypes {
+export enum CustomButtonTypes {
     AWAIS = 'AWAIS',
     ZOHAIB = 'ZOHAIB'
 }

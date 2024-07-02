@@ -3,7 +3,7 @@ import React, {  useState } from 'react'
 import { useTodoContext } from '@/context/todo-context/todo-context'
 import CustomInputTag from '@/shared/custom-input-tag/custom-input-tag'
 import CustomButton from '@/shared/custom-button-tag/custom-button-component'
-import { customButtonStyles } from '@/shared/custom-button-tag/custom-button-types'
+import { customButtonStyles, CustomButtonTypes } from '@/shared/custom-button-tag/custom-button-types'
 
 const Header = () => {
     const [todo, setTodo] = useState('')
@@ -27,7 +27,7 @@ const Header = () => {
                 placeholder="ADD TODO"
                 required
                 changeEvent={handleInput} />
-            <CustomButton  type={customButtonStyles.AWAIS} onClick={handleAdd}>Add Todo</CustomButton>
+            <CustomButton  type={CustomButtonTypes.AWAIS} onClick={handleAdd}>Add Todo</CustomButton>
         </div>
     </div>
   )
